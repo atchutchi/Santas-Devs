@@ -44,24 +44,6 @@ h1, h2, h3, h4, h5, h6 {
   /* Uppercase labels for a cleaner look */
 }
 
-/* Styles for the Music Player */
-.music-player {
-  margin-top: 20px;
-  /* Space between countdown and player */
-}
-
-/* Style for the card generator canvas */
-.card-canvas {
-  border: 2px solid #777777;
-}
-
-.overlay-container {
-  position: relative;
- 
-  margin: auto;
-}
-
-
 /* Style for Music Player Footer */
 .footer {
   background-color: #014421; /* Forest green background */
@@ -72,12 +54,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Playlist modal at the bottom right */
 .playlist-modal {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 300px; /* Fixed width for the modal */
-  height: auto;
-  z-index: 1000;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px;
   display: none; /* Initially hidden */
+  z-index: 1001; /* Above other elements */
 }
 
 
@@ -90,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ensure close button is visible */
 .close-modal {
-  color: #000;
+  float: right;
   cursor: pointer;
 }
 
